@@ -1,27 +1,30 @@
 # One Kebab Please 
 
-Jeu de simulation de chef kebabier en VR sur Oculus et MetaQuest 3.
+Jeu où l’on intitule un maître kébabier qui confectionnera des kebabs comme chez votre restaurant turque préféré.
 
-**Objectif : Préparer une commande kebab classique avec les ingrédients traditionnels et la méthode de découpe originale.**
+**Vous aurez pour but de préparer des kebabs classiques, composés d’ingrédients tels que :**
+-	Salade
+-	Tomate
+-	Oignon
+-	Sauce 
+-	Frites
+-	Pain
+-	Viande de kebab
 
-Environnement : 3D
-Matériels VR utilisés : Oculus, MetaQuest 3
+**Mécanique de grab :**
+-	Attraper la pince
+-	Attraper le couteau de découpe de viande kebab
+-	Attraper le couteau de découpe de légumes
+-	Attraper la grille de friture
 
-- **Outillages (Attraper, lâcher) :**
-    - Couteau
-    - Grille de friture
-    - Pince
-    
-- **Ingrédients :**
-    - Viande kebab
-    - Frites
-    - Salades
-    - Tomates
-    - Oignon
-    
-- **Mécaniques du jeu :**
-    - Découper la viande cuite de la broche
-    - Mettre à frire les frites
-    - Dresser un kebab avec Pain, viandes, ingrédients et frites
+**Mécanique de découpe :**
+-	Des légumes : Préparation des tranches de tomates et oignons en amont.
+-	De la viande : Découpe des tranches de kebab cuites sur la broche qui tourne.
+
+**Bonus :**
+Système de commandes clients :
+-	Recevoir des commandes personnalisées (Salade, Sans Tomate, Oignon, Sauce algérienne) et préparer ces dernières 
+-	Système de score
+
 
 Version unity utilisée : 22.3.4
