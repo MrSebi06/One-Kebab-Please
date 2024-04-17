@@ -11,14 +11,12 @@ public class IngredientTrigger : XRBaseInteractable
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        // Instantiate object
         GameObject newObject = Instantiate(grabbableObject, transformToInstantiate.position, Quaternion.identity);
         newObject.SetActive(true);
         
-        // Get grab interactable from prefab
         XRGrabInteractable objectInteractable = newObject.GetComponent<XRGrabInteractable>();
         
-        // Select object into same interactor
+        interactionManager.SelectExit(args.interactorObject, args.interactableObject);
         interactionManager.SelectEnter(args.interactorObject, objectInteractable);
         
         base.OnSelectEntered(args);
