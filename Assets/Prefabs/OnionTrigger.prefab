@@ -185,7 +185,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   grabbableObject: {fileID: 4158808546537073251}
-  transformToInstantiate: {fileID: 0}
+  transformToInstantiate: {fileID: 4510453497846991024}
 --- !u!1 &1559598379930792821
 GameObject:
   m_ObjectHideFlags: 0
