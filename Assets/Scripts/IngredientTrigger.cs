@@ -13,6 +13,7 @@ public class IngredientTrigger : XRBaseInteractable
     {
         // Instantiate object
         GameObject newObject = Instantiate(grabbableObject, transformToInstantiate.position, Quaternion.identity);
+        newObject.SetActive(true);
         
         // Get grab interactable from prefab
         XRGrabInteractable objectInteractable = newObject.GetComponent<XRGrabInteractable>();
