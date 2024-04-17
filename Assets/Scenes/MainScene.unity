@@ -302,6 +302,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6720989423643892401, guid: 38d2180eb2a8024429bb37e9009def3e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Kebab
+      objectReference: {fileID: 0}
     - target: {fileID: 6972427380935981463, guid: 38d2180eb2a8024429bb37e9009def3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -488,6 +493,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3681657424619892396, guid: bc4f266a2a2de18488566148fd93ffe4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 0364cb9826f0658439df5f3516699703,
+        type: 3}
     - target: {fileID: 6351010282032133961, guid: bc4f266a2a2de18488566148fd93ffe4,
         type: 3}
       propertyPath: m_RootOrder
@@ -564,7 +575,8 @@ PrefabInstance:
       value: Condiments
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 512465311241153979, guid: bc4f266a2a2de18488566148fd93ffe4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4f266a2a2de18488566148fd93ffe4, type: 3}
@@ -704,21 +716,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1844398472733152030, guid: da81ab56cf5386044860ae58ca53acec,
-        type: 3}
-      propertyPath: transformToInstantiate
-      value: 
-      objectReference: {fileID: 950239879}
     - target: {fileID: 5699022055939174606, guid: da81ab56cf5386044860ae58ca53acec,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 842481414}
-    - target: {fileID: 5700316767094089095, guid: da81ab56cf5386044860ae58ca53acec,
-        type: 3}
-      propertyPath: transformToInstantiate
-      value: 
-      objectReference: {fileID: 950239879}
     - target: {fileID: 8795778795537279363, guid: da81ab56cf5386044860ae58ca53acec,
         type: 3}
       propertyPath: m_Name
