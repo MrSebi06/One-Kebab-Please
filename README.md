@@ -1,6 +1,6 @@
 # One Kebab Please 
 
-Jeu où l’on intitule un maître kébabier qui confectionnera des kebabs comme chez votre restaurant turque préféré.
+Un jeu en réalité virtuelle où l’on incarne un maître kébabier. 
 
 
 **Vous aurez pour but de préparer des kebabs classiques, composés d’ingrédients tels que :**
