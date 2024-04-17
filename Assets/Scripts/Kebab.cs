@@ -8,6 +8,11 @@ public class Kebab : MonoBehaviour
     [SerializeField] private GameObject salad;
     [SerializeField] private GameObject tomatoes;
     [SerializeField] private GameObject onions;
+
+    [SerializeField] private GameObject mayo;
+    [SerializeField] private GameObject ketchup;
+    [SerializeField] private GameObject whiteSauce;
+    [SerializeField] private GameObject hotSauce;
     
     void OnEnable()
     {
@@ -18,7 +23,6 @@ public class Kebab : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OnTriggerEnter");
         if (other.gameObject.CompareTag("Salad"))
         {
             salad.SetActive(true);
@@ -33,6 +37,27 @@ public class Kebab : MonoBehaviour
         {
             onions.SetActive(true);
             Destroy(other.gameObject);
+        }
+    }
+    
+    public void AddSauce(SauceType sauceType)
+    {
+        switch (sauceType)
+        {
+            case SauceType.Mayo:
+                mayo.SetActive(true);
+                break;
+            case SauceType.Ketchup:
+                ketchup.SetActive(true);
+                break;
+            case SauceType.WhiteSauce:
+                whiteSauce.SetActive(true);
+                break;
+            case SauceType.HotSauce:
+                hotSauce.SetActive(true);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
     }
 }
