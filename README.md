@@ -14,7 +14,6 @@ Un jeu en réalité virtuelle où l’on incarne un maître kébabier.
 
 
 **Mécanique de grab :**
--	Attraper la pince
 -	Attraper le couteau de découpe de viande kebab
 -	Attraper le couteau de découpe de légumes
 -	Attraper la grille de friture
