@@ -18,7 +18,6 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        
         if (timerIsRunning)
         {
             if (timeRemaining > 0)
@@ -32,7 +31,6 @@ public class Timer : MonoBehaviour
                 timerIsRunning = false;
             }
         }
-        
     }
 
     void DisplayTime(float timeToDisplay)
