@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class Kebab : MonoBehaviour
 {
+    public enum IngredientEnum
+    {
+        Salad,
+        Tomatoes,
+        Onions
+    }
+    
     [SerializeField] private GameObject salad;
     [SerializeField] private GameObject tomatoes;
     [SerializeField] private GameObject onions;
@@ -25,18 +32,36 @@ public class Kebab : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Salad"))
         {
-            salad.SetActive(true);
+            AddIngredient(IngredientEnum.Salad);
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Tomatoes"))
         {
-            tomatoes.SetActive(true);
+            AddIngredient(IngredientEnum.Tomatoes);
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Onions"))
         {
-            onions.SetActive(true);
+            AddIngredient(IngredientEnum.Onions);
             Destroy(other.gameObject);
+        }
+    }
+    
+    public void AddIngredient(IngredientEnum ingredientEnum)
+    {
+        switch (ingredientEnum)
+        {
+            case IngredientEnum.Salad:
+                salad.SetActive(true);
+                break;
+            case IngredientEnum.Tomatoes:
+                tomatoes.SetActive(true);
+                break;
+            case IngredientEnum.Onions:
+                onions.SetActive(true);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
     }
     
@@ -59,5 +84,52 @@ public class Kebab : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+    
+    public SortedSet<IngredientEnum> GetIngredients()
+    {
+        SortedSet<IngredientEnum> ingredients = new SortedSet<IngredientEnum>();
+        if (salad.activeSelf)
+        {
+            ingredients.Add(IngredientEnum.Salad);
+        }
+        
+        if (tomatoes.activeSelf)
+        {
+            ingredients.Add(IngredientEnum.Tomatoes);
+        }
+        
+        if (onions.activeSelf)
+        {
+            ingredients.Add(IngredientEnum.Onions);
+        }
+        
+        return ingredients;
+    }
+    
+    public SortedSet<SauceType> GetSauces()
+    {
+        SortedSet<SauceType> sauces = new SortedSet<SauceType>();
+        if (mayo.activeSelf)
+        {
+            sauces.Add(SauceType.Mayo);
+        }
+        
+        if (ketchup.activeSelf)
+        {
+            sauces.Add(SauceType.Ketchup);
+        }
+        
+        if (whiteSauce.activeSelf)
+        {
+            sauces.Add(SauceType.WhiteSauce);
+        }
+        
+        if (hotSauce.activeSelf)
+        {
+            sauces.Add(SauceType.HotSauce);
+        }
+        
+        return sauces;
     }
 }
