@@ -15,6 +15,7 @@ public class Basket : MonoBehaviour
     [SerializeField] private Slider slider;
     [SerializeField] private float endPosition;
     [SerializeField] private float startPosition;
+    [Layer] public int acceptedLayer;
     private float _elevationStep;
     
     [Header("States")]
@@ -35,16 +36,12 @@ public class Basket : MonoBehaviour
         foodStack.SetActive(false);
         foodFactory.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     void OnTriggerEnter(Collider food)
     {
-        if (!food.CompareTag(tag) || quantity == capacity) return;
+        int layerNumber = food.gameObject.layer;
+
+        if (!food.CompareTag(tag) || quantity == capacity || layerNumber != acceptedLayer) return;
         Destroy(food.gameObject);
         AddElement();
         UpdateSlider();

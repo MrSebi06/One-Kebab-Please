@@ -67,7 +67,7 @@ public class SliceObject : MonoBehaviour
         SetupSliceComponent(hullPart);
     }
     
-    public void SetupSliceComponent(GameObject slicedObject)
+    private void SetupSliceComponent(GameObject slicedObject)
     {
         MeshCollider slicedCollider = slicedObject.AddComponent<MeshCollider>();
         slicedCollider.convex = true;
