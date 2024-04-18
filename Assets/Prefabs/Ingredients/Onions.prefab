@@ -275,7 +275,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   grabbableObject: {fileID: 8330723440558701932}
-  transformToInstantiate: {fileID: 0}
+  transformToInstantiate: {fileID: 8707565260962605014}
 --- !u!1 &1263044168720611600
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,10 +326,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodStack: {fileID: 3224894058132325162}
-  foodFactory: {fileID: 8330723440558701932}
+  foodFactory: {fileID: 1110850674075789048}
   slider: {fileID: 8846843984492654232}
   endPosition: 0.25
   startPosition: 0
+  acceptedLayer: 3
   capacity: 10
   quantity: 0
 --- !u!65 &85804853950704123

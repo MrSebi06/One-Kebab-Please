@@ -126,10 +126,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodStack: {fileID: 8275994437720126559}
-  foodFactory: {fileID: 8784631242963892206}
+  foodFactory: {fileID: 6253077898809781236}
   slider: {fileID: 6967038745697615716}
   endPosition: 0.172
   startPosition: 0
+  acceptedLayer: 3
   capacity: 10
   quantity: 0
 --- !u!65 &3225420084745264785
@@ -414,7 +415,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   grabbableObject: {fileID: 8784631242963892206}
-  transformToInstantiate: {fileID: 0}
+  transformToInstantiate: {fileID: 8260330959448665428}
 --- !u!1 &6808475844370308223
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +789,7 @@ PrefabInstance:
     - target: {fileID: 5599325296204914366, guid: 8a76654e492faf140aeeee4890fef70d,
         type: 3}
       propertyPath: m_Name
-      value: salad
+      value: salad_factory
       objectReference: {fileID: 0}
     - target: {fileID: 5599325296204914366, guid: 8a76654e492faf140aeeee4890fef70d,
         type: 3}
