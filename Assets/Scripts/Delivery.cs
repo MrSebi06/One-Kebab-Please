@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +27,7 @@ public class Delivery : MonoBehaviour
         SortedSet<Kebab.IngredientEnum> kebabIngredients = kebab.GetIngredients();
         SortedSet<SauceType> kebabSauces = kebab.GetSauces();
         
-        if (kebabIngredients.SetEquals(ingredients) && kebabSauces.SetEquals(sauces))
+        if (kebabIngredients.SetEquals(ingredients) && kebabSauces.SetEquals(sauces) && kebab.meat.activeSelf)
         {
             Destroy(kebab.gameObject);
             commandHandler.TimerStopped();

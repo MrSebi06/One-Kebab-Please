@@ -330,7 +330,7 @@ MonoBehaviour:
   slider: {fileID: 8846843984492654232}
   endPosition: 0.25
   startPosition: 0
-  acceptedLayer: 3
+  acceptedLayer: 0
   capacity: 10
   quantity: 0
 --- !u!65 &85804853950704123

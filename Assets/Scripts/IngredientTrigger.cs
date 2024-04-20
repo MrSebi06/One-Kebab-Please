@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class IngredientTrigger : XRBaseInteractable
 
     [SerializeField]
     private Transform transformToInstantiate;
+    
+    [SerializeField] [CanBeNull] private Basket basket;
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -18,6 +21,11 @@ public class IngredientTrigger : XRBaseInteractable
         
         interactionManager.SelectExit(args.interactorObject, args.interactableObject);
         interactionManager.SelectEnter(args.interactorObject, objectInteractable);
+
+        if (basket != null)
+        {
+            basket.DeleteElement();
+        }
         
         base.OnSelectEntered(args);
     }

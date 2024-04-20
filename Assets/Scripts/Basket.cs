@@ -1,21 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Basket : MonoBehaviour
 {
-
     [Header("Elements")]
     [SerializeField] private GameObject foodStack;
     [SerializeField] private GameObject foodFactory;
     [SerializeField] private Slider slider;
     [SerializeField] private float endPosition;
     [SerializeField] private float startPosition;
-    [Layer] public int acceptedLayer;
+    public int acceptedLayer;
     private float _elevationStep;
     
     [Header("States")]
@@ -49,7 +43,11 @@ public class Basket : MonoBehaviour
 
     private void CheckQuantity()
     {
-        if(quantity == 0) foodStack.SetActive(false);
+        if (quantity == 0)
+        {
+            foodStack.SetActive(false);
+            return;
+        }
         foodStack.SetActive(true);
         foodFactory.SetActive(true);
     }
@@ -65,6 +63,7 @@ public class Basket : MonoBehaviour
         quantity--;
         MoveObject("down");
         CheckQuantity();
+        UpdateSlider();
     }
 
     private void UpdateSlider()

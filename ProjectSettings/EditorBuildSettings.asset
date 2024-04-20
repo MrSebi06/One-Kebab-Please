@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 8e493ad61f556334d9cebd4ba95fc7dd
+  - enabled: 1
+    path: Assets/Scenes/KebabScene.unity
+    guid: 1084d55b87ad0cb409e991834e6d5e31
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2de6d8acd3d669d43884056450691d4f,
       type: 2}

@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +10,8 @@ public class Kebab : MonoBehaviour
         Tomatoes,
         Onions
     }
+    
+    public GameObject meat;
     
     [SerializeField] private GameObject salad;
     [SerializeField] private GameObject tomatoes;
@@ -30,6 +31,12 @@ public class Kebab : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Meat"))
+        {
+            meat.SetActive(true);
+            Destroy(other.gameObject);
+        }
+        
         if (other.gameObject.CompareTag("Salad"))
         {
             AddIngredient(IngredientEnum.Salad);
