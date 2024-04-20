@@ -184,8 +184,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  grabbableObject: {fileID: 6720989423643892401}
+  grabbableObject: {fileID: 3359643709171997989, guid: 9aad44300c3069548a5dc5db23a73964,
+    type: 3}
   transformToInstantiate: {fileID: 4510453497846991024}
+  basket: {fileID: 0}
 --- !u!1 &1559598379930792821
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,12 +417,6 @@ PrefabInstance:
 --- !u!4 &5381110864469187811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4140938567957306231, guid: 9aad44300c3069548a5dc5db23a73964,
-    type: 3}
-  m_PrefabInstance: {fileID: 8348013868540299156}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6720989423643892401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3359643709171997989, guid: 9aad44300c3069548a5dc5db23a73964,
     type: 3}
   m_PrefabInstance: {fileID: 8348013868540299156}
   m_PrefabAsset: {fileID: 0}
